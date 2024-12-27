@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美味之家 - 探索美食的世界</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">美味之家</div>
+            <ul>
+                <li><a href="index.html" class="active">精选美食</a></li>
+                <li><a href="recipes.html">美食菜谱</a></li>
+                <li><a href="game.html">美食问答</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>探索美食的无限可能</h1>
+            <p>让每一顿饭都成为一场美味的享受</p>
+            <a href="recipes.html" class="cta-button">浏览菜谱</a>
+        </section>
+
+        <section class="featured-dishes">
+            <h2>精选美食</h2>
+            <div class="dish-grid">
+                <div class="dish-card">
+                    <img src="https://images.pexels.com/photos/2097090/pexels-photo-2097090.jpeg" alt="红烧肉">
+                    <h3>经典红烧肉</h3>
+                    <p>传统美味，肥而不腻</p>
+                    <div class="dish-info">
+                        <span>难度：⭐⭐⭐</span>
+                        <span>时间：60分钟</span>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <img src="https://images.pexels.com/photos/2347311/pexels-photo-2347311.jpeg" alt="麻婆豆腐">
+                    <h3>麻婆豆腐</h3>
+                    <p>川菜经典，麻辣鲜香</p>
+                    <div class="dish-info">
+                        <span>难度：⭐⭐</span>
+                        <span>时间：30分钟</span>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <img src="https://images.pexels.com/photos/699953/pexels-photo-699953.jpeg" alt="清蒸鱼">
+                    <h3>清蒸鱼</h3>
+                    <p>鲜美可口，营养健康</p>
+                    <div class="dish-info">
+                        <span>难度：⭐⭐⭐</span>
+                        <span>时间：25分钟</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories">
+            <h2>美食分类</h2>
+            <div class="category-grid">
+                <a href="#" class="category-card">
+                    <img src="https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg" alt="川菜">
+                    <h3>川菜</h3>
+                </a>
+                <a href="#" class="category-card">
+                    <img src="https://images.pexels.com/photos/955137/pexels-photo-955137.jpeg" alt="粤菜">
+                    <h3>粤菜</h3>
+                </a>
+                <a href="#" class="category-card">
+                    <img src="https://images.pexels.com/photos/1234535/pexels-photo-1234535.jpeg" alt="苏菜">
+                    <h3>苏菜</h3>
+                </a>
+                <a href="#" class="category-card">
+                    <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg" alt="鲁菜">
+                    <h3>鲁菜</h3>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- AI助手聊天窗口 -->
+    <div class="chat-widget">
+        <button class="chat-toggle" id="chatToggle">
+            <span class="toggle-icon">👨‍🍳</span>
+            <span class="toggle-text">美食助手</span>
+        </button>
+        <div class="chat-container" id="chatContainer">
+            <div class="chat-header">
+                <h3>美食智能助手</h3>
+                <button class="minimize-btn" id="minimizeChat">−</button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="message assistant">
+                    <div class="message-content">
+                        你好！我是美食助手，可以为您解答任何关于美食的问题，比如：
+                        <ul>
+                            <li>菜品的烹饪方法</li>
+                            <li>食材的搭配建议</li>
+                            <li>各地美食特色</li>
+                            <li>饮食健康知识</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="请输入您的问题...">
+                <button id="sendMessage">发送</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>关于我们</h4>
+                <p>美味之家致力于分享最地道的美食菜谱和烹饪技巧。</p>
+            </div>
+            <div class="footer-section">
+                <h4>关注我们</h4>
+                <div class="social-links">
+                    <a href="#">微博</a>
+                    <a href="#">微信</a>
+                    <a href="#">抖音</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 美味之家. 保留所有权利。</p>
+        </div>
+    </footer>
+    <script src="chat.js"></script>
+</body>
+</html> 
